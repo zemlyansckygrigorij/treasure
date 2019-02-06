@@ -1,0 +1,55 @@
+<html>
+<head>
+    <title>Tetris</title>
+  
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	
+	<!-- library for testing  -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.css">
+	  <!-- подключаем библиотеку Mocha -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.js"></script>
+	  <!-- настраиваем Mocha: предстоит BDD-тестирование -->
+
+	<!-- подключаем chai -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/chai/2.0.0/chai.js"></script>
+	<!-- в chai есть много всего, выносим assert в глобальную область -->
+	
+</head>
+<body>
+    <div id="main">
+		<div id="game" >
+			
+		</div>
+		<div id="buttons">
+		
+		</div>
+		<div id="countGame">
+			<h1>Сыграно игр: <span id= 'countgames'></span><br/>
+			
+			Набрано очков: <span id= 'count'></span><br/>
+			</h1>
+		</div>
+		<div id="finishBlock" hidden="true ">
+		    <h1>Вы <span id= "finish"></span><br/>
+			   Хотите сыграть еще ?
+			</h1>
+			<button  id="finishButtonOk" class ="finishButton" >Играть</button>
+			<button  id="finishButtonExit" class ="finishButton" >Выход</button>
+		</div>
+		
+		
+		<!-- в элементе с id="mocha" будут результаты тестов -->
+         <div id="mocha"  hidden="true "></div>
+	</div>
+    
+</body>
+  <script src="js/data.js"></script>
+  <script src="js/library.js"></script>
+    <script src="js/script.js"></script>
+   <!-- в этом скрипте находятся спеки -->
+  <script src="js/test.js"></script>
+  <script>
+//run test
+   // mocha.run();
+  </script>
+</html>
